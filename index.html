@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <div id="chessBoard">
+            <!-- рисуем шахматную доску -->
+            <div class="outerblock">
+                <div class="numbers"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">A</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">B</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">C</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">D</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">E</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">F</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">G</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">H</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers"></div>
+            </div>
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">8</div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="A8" onclick=" fun(this)" data-h="A8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="B8" onclick=" fun(this)" data-h="B8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="C8" onclick=" fun(this)" data-h="C8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="D8" onclick=" fun(this)" data-h="D8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="E8" onclick=" fun(this)" data-h="E8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="F8" onclick=" fun(this)" data-h="F8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="G8" onclick=" fun(this)" data-h="G8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="H8" onclick=" fun(this)" data-h="H8"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">8</div>
+            </div>
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">7</div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="A7" onclick=" fun(this)" data-h="A7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="B7" onclick=" fun(this)" data-h="B7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="C7" onclick=" fun(this)" data-h="C7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="D7" onclick=" fun(this)" data-h="D7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="E7" onclick=" fun(this)" data-h="E7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="F7" onclick=" fun(this)" data-h="F7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="G7" onclick=" fun(this)" data-h="G7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="H7" onclick=" fun(this)" data-h="H7"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">7</div>
+            </div>
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">6</div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="A6" onclick=" fun(this)" data-h="A6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="B6" onclick=" fun(this)" data-h="B6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="C6" onclick=" fun(this)" data-h="C6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="D6" onclick=" fun(this)" data-h="D6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="E6" onclick=" fun(this)" data-h="E6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="F6" onclick=" fun(this)" data-h="F6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="G6" onclick=" fun(this)" data-h="G6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="H6" onclick=" fun(this)" data-h="H6"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">6</div>
+            </div>
+
+
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">5</div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="A5" onclick=" fun(this)" data-h="A5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="B5" onclick=" fun(this)" data-h="B5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="C5" onclick=" fun(this)" data-h="C5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="D5" onclick=" fun(this)" data-h="D5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="E5" onclick=" fun(this)" data-h="E5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="F5" onclick=" fun(this)" data-h="F5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="G5" onclick=" fun(this)" data-h="G5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="H5" onclick=" fun(this)" data-h="H5"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">5</div>
+            </div>
+
+
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">4</div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="A4" onclick=" fun(this)" data-h="A4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="B4" onclick=" fun(this)" data-h="B4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="C4" onclick=" fun(this)" data-h="C4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="D4" onclick=" fun(this)" data-h="D4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="E4" onclick=" fun(this)" data-h="E4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="F4" onclick=" fun(this)" data-h="F4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="G4" onclick=" fun(this)" data-h="G4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="H4" onclick=" fun(this)" data-h="H4"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">4</div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">3</div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="A3" onclick=" fun(this)" data-h="A3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="B3" onclick=" fun(this)" data-h="B3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="C3" onclick=" fun(this)" data-h="C3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="D3" onclick=" fun(this)" data-h="D3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="E3" onclick=" fun(this)" data-h="E3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="F3" onclick=" fun(this)" data-h="F3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="G3" onclick=" fun(this)" data-h="G3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="H3" onclick=" fun(this)" data-h="H3"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">3</div>
+            </div>
+
+
+
+
+            <div class="outerblock">
+                <div class="numbers">2</div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="A2" onclick=" fun(this)" data-h="A2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="B2" onclick=" fun(this)" data-h="B2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="C2" onclick=" fun(this)" data-h="C2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="D2" onclick=" fun(this)" data-h="D2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="E2" onclick=" fun(this)" data-h="E2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="F2" onclick=" fun(this)" data-h="F2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="G2" onclick=" fun(this)" data-h="G2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="H2" onclick=" fun(this)" data-h="H2"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">2</div>
+            </div>
+
+
+            <div class="outerblock">
+                <div class="numbers">1</div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="A1" onclick=" fun(this)" data-h="A1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="B1" onclick=" fun(this)" data-h="B1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="C1" onclick=" fun(this)" data-h="C1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="D1" onclick=" fun(this)" data-h="D1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="E1" onclick=" fun(this)" data-h="E1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="F1" onclick=" fun(this)" data-h="F1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="blacks" id="G1" onclick=" fun(this)" data-h="G1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="whites" id="H1" onclick=" fun(this)" data-h="H1"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">1</div>
+            </div>
+
+
+
+            <div class="outerblock">
+                <div class="numbers"></div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">A</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">B</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">C</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">D</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">E</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">F</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">G</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers">H</div>
+            </div>
+            <div class="outerblock">
+                <div class="numbers"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        count = 0;
+        var d = [];
+        function fun(element) { // слегка измененная функция из задания 2 , которая привязываетcя к шахматной доске
+            var b = element.getAttribute('data-h'); // с помощью события onclick
+            element.style.background = "blue"; // задаем цвет нажатой кнопке
+            var c = [];
+            var a = [['Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out'],
+            ['Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out'],
+            ['Out', 'Out', 'A1', 'B1', 'C1', 'D1', 'E1', 'F1', 'G1', 'H1', 'Out', 'Out'],
+            ['Out', 'Out', 'A2', 'B2', 'C2', 'D2', 'E2', 'F2', 'G2', 'H2', 'Out', 'Out'],
+            ['Out', 'Out', 'A3', 'B3', 'C3', 'D3', 'E3', 'F3', 'G3', 'H3', 'Out', 'Out'],
+            ['Out', 'Out', 'A4', 'B4', 'C4', 'D4', 'E4', 'F4', 'G4', 'H4', 'Out', 'Out'],
+            ['Out', 'Out', 'A5', 'B5', 'C5', 'D5', 'E5', 'F5', 'G5', 'H5', 'Out', 'Out'],
+            ['Out', 'Out', 'A6', 'B6', 'C6', 'D6', 'E6', 'F6', 'G6', 'H6', 'Out', 'Out'],
+            ['Out', 'Out', 'A7', 'B7', 'C7', 'D7', 'E7', 'F7', 'G7', 'H7', 'Out', 'Out'],
+            ['Out', 'Out', 'A8', 'B8', 'C8', 'D8', 'E8', 'F8', 'G8', 'H8', 'Out', 'Out'],
+            ['Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out'],
+            ['Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out', 'Out']
+            ];
+
+            for (var i = 0; i < a.length; i++) { //двойным циклом прогоняем каждую клетку шахматной доски
+                for (var j = 0; j < a[i].length; j++) {
+                    if (a[i][j] == b) {
+                        c.push(a[i + 2][j + 1], a[i + 2][j - 1], a[i - 2][j + 1], a[i - 2][j - 1], a[i + 1][j + 2],
+                            a[i + 1][j - 2], a[i - 1][j + 2], a[i - 1][j - 2]); //в массив заносим все возможные ходы
+                    } // конем , если представить , что доска бесконечна 
+                }
+            }
+            for (var i = 0; i < c.length; i++) { // выкидываем те элементы из массива , что находятся за пределами доски
+                if (c[i] == 'Out') {
+                    c.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+
+            for (i = 0; i < d.length; i++) { // если массив d не пуст , то в зависимости от предыдущего цвета 
+                // клетки (белый или черный), клетка становится белой или черной соответственно (сейчас она зеленая или синяя,
+                // если это не первый клик)
+                if (d[i] == 'A8' || d[i] == 'A6' || d[i] == 'A4' || d[i] == 'A2' || d[i] == 'B7' || d[i] == 'B5'
+                    || d[i] == 'B3' || d[i] == 'B1' || d[i] == 'C8' || d[i] == 'C6' || d[i] == 'C4' || d[i] == 'C2'
+                    || d[i] == 'D7' || d[i] == 'D5' || d[i] == 'D3' || d[i] == 'D1' || d[i] == 'E8' || d[i] == 'E6'
+                    || d[i] == 'E4' || d[i] == 'E2' || d[i] == 'F7' || d[i] == 'F5' || d[i] == 'F3' || d[i] == 'F1'
+                    || d[i] == 'G8' || d[i] == 'G6' || d[i] == 'G4' || d[i] == 'G2' || d[i] == 'H7' || d[i] == 'H5'
+                    || d[i] == 'H3' || d[i] == 'H1')
+                    document.getElementById(d[i]).style.background = "white";
+                if (d[i] == 'A7' || d[i] == 'A5' || d[i] == 'A3' || d[i] == 'A1' || d[i] == 'B8' || d[i] == 'B6'
+                    || d[i] == 'B4' || d[i] == 'B2' || d[i] == 'C7' || d[i] == 'C5' || d[i] == 'C3' || d[i] == 'C1'
+                    || d[i] == 'D8' || d[i] == 'D6' || d[i] == 'D4' || d[i] == 'D2' || d[i] == 'E7' || d[i] == 'E5'
+                    || d[i] == 'E3' || d[i] == 'E1' || d[i] == 'F8' || d[i] == 'F6' || d[i] == 'F4' || d[i] == 'F2'
+                    || d[i] == 'G7' || d[i] == 'G5' || d[i] == 'G3' || d[i] == 'G1' || d[i] == 'H8' || d[i] == 'H6'
+                    || d[i] == 'H4' || d[i] == 'H2')
+                    document.getElementById(d[i]).style.background = "black";
+            }
+            d.splice(0, d.length); // очищаем массив, чтобы при следующем нажатии функция сработала бы также
+
+            for (i = 0; i < c.length; i++) { // выделяем нажатую клетку , а также копируем элементы массива c в 
+                document.getElementById(c[i]).style.background = "green"; // массив d, а также элемент с нажатой клеткой
+                // (синий),чтобы при следующим клике все прошлые элементы снова стали черными и белыми соответственно 
+                //(а не зелеными и синими)
+                d.push(document.getElementById(c[i]).id);
+            }
+            d.push(element.id)
+        }
+    </script>
+</body>
+
+</html>
